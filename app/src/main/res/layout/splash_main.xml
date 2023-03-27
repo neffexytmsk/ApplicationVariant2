@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SplashActivity"
+    android:background="#181A21"
+    android:fillViewport="true">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageSplash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/splash"
+        android:layout_marginTop="200dp"
+        android:layout_marginLeft="135dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <TextView
+        android:id="@+id/textSplash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Scribblr"
+        android:textSize="45dp"
+        android:layout_marginTop="40dp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/urbanist_bold"
+        android:layout_marginLeft="122.5dp"
+        app:layout_constraintTop_toBottomOf="@+id/imageSplash"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:layout_marginLeft="177.5dp"
+        android:layout_marginBottom="60dp"
+        android:indeterminateDrawable="@drawable/splash_progressbar_activiry"
+        android:indeterminateOnly="true"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textSplash"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
